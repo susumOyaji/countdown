@@ -55,11 +55,10 @@ class _CountDownTimerState extends State<CountDownTimer>
               children: <Widget>[
                 Align(
                   alignment: Alignment.bottomCenter,
-                  child:
-                  Container(
+                  child: Container(
                     color: Colors.amber,
                     height:
-                    controller.value * MediaQuery.of(context).size.height,
+                        controller.value * MediaQuery.of(context).size.height,
                   ),
                 ),
                 Padding(
@@ -77,18 +76,18 @@ class _CountDownTimerState extends State<CountDownTimer>
                                 Positioned.fill(
                                   child: CustomPaint(
                                       painter: CustomTimerPainter(
-                                        animation: controller,
-                                        backgroundColor: Colors.white,
-                                        color: themeData.indicatorColor,
-                                      )),
+                                    animation: controller,
+                                    backgroundColor: Colors.white,
+                                    color: themeData.indicatorColor,
+                                  )),
                                 ),
                                 Align(
                                   alignment: FractionalOffset.center,
                                   child: Column(
                                     mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
+                                        MainAxisAlignment.spaceEvenly,
                                     crossAxisAlignment:
-                                    CrossAxisAlignment.center,
+                                        CrossAxisAlignment.center,
                                     children: <Widget>[
                                       Text(
                                         "Count Down Timer",
